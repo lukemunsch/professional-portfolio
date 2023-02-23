@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.text-underline {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* base.html styles */
+
+body {
+    background: url('/media/main-wallpaper.png') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    height: calc(100vh - 100px);
+}
+
+.top-header {
+    color: aliceblue;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 220%;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.subheader {
+    color: aliceblue;
+    font-family: 'Andika', Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.header-bar {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid black;
+}
+
+.linkedin {
+    font-family: 'Oswald', Arial, sans-serif;
+    color: aliceblue;
+    letter-spacing: 2px;
+    font-size: 100%;
+}
+
+.linkedin a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.linkedin a:hover {
+    color: rgb(85, 185, 255);
+}
+
+.menucontainer {
+    height: 100px;
+    margin-bottom: 0;
+}
+
+#nav {
+    margin: 0;
+}
+
+#nav li {
+    padding: 0;
+}
+
+.menuitem {
+    height: 100px;
+    text-align: center;
+    padding: 0;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+.menuitem a {
+    width: 100%;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: aliceblue;
+    height: 100px;
+}
+
+.menuitem a i {
+    padding-top: 20px;
+    display: block;
+    color: aliceblue;
+    font-size: 26px;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/*----------------------- Hover.css effects ---*/
+
+.hvr-sweep-to-top:before {
+    background: #25b818;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+/*------------------- Home styles ---*/
+
+.profile-section {
+    font-weight: 700;
+    font-size: 130%;
+    text-align: justify;
+}
+
+.profile-img {
+    max-height: 300px;
+    max-width: 100%;
+    border: 2px solid black;
+    text-align: center;
+    align-items: center;
+}
+
+.tech-text {
+    font-family: 'Andika', Arial, Helvetica, sans-serif;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.tech {
+    color: aliceblue;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*---------- resume page ---*/
+
+.title-section {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.dark-band {
+    padding: 2px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: black;
+}
+
+.project-item {
+    font-family: 'Andika', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border: 2px solid black;
+    height: 70px;
+    padding: 10px;
+}
+
+.project-item:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    background-color: rgb(85, 185, 255);
+    color: black;
+}
+
+/*---------- project details page ---*/
+
+.language-list {
+    font-size: 90%;
+    font-weight: 400;
+    text-transform: lowercase;
+    color: aliceblue;
+}
+
+.qr-img {
+    max-height: 100px;
+}
+
+.screengrab-img {
+    max-width: 60%;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.screengrab-img:hover {
+    opacity: 0.7;
+}
+
+.source-link {
+    font-family: 'Oswald', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 100%;
+}
+
+.source-link a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.source-link a:hover {
+    color: rgb(85, 185, 255);
+}
+
+/* button for returning to previous page */
+.return-button {
+    text-decoration: none;
+    background-color: rgba(85, 185, 255, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    height: 42px;
+    width: auto;
+    position: fixed;
+    bottom: 110px;
+    left: 20px;
+    padding: 5px;
+}
+
+.return-link {
+    font-family: 'Oswald', Arial, sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 200;
+}
+
+.return-link:hover {
+    color: blue;
+}
+
+.source-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    border: 1px solid aliceblue;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 10px;
+}
+
+
+/*---------- modal for screengrab images ---*/
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+
+    height: auto;
+    max-width: 1200px;
+  }
+
+  .modal-content a {
+    text-decoration: none;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(85, 185, 255);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    max-height: 500px;
+    align-items: center;
+    text-align: center;
+    display: none;
+    max-width: 800px;
+  }
+
+  .mySlides img {
+    max-width: 90%;
+    max-height: 500px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 300px;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding-top: 8px;
+    z-index: 0;
+  }
+  
+  img.demo {
+    max-width: 100px;
+    border-radius: 8%;
+    border: 2px solid black;
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+/* ---------- Contact page --- */
+
+.nav-link {
+    font-family: 'Oswald', Arial, sans-serif;
+    color: aliceblue;
+}
+
+.nav-link:hover {
+    background-color: rgb(85, 185, 255);
+    color: black;
+    border: 2px solid black;
+    border-bottom: 0px;
+}
+
+.tab-pane {
+    margin-top: 20px;
+}
+
+.tab-pane {
+    cursor: default;
+}
+
+.tab-content {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.tab-content a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.tab-content a:hover {
+    text-transform: uppercase;
+    color: black;
+}
+
+/*---------- media queries ---*/
+
+@media (min-width: 767px) {
+    .footer-container {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width:767px) {
+    .title-section {
+        text-align: center;
+    }
+
+    .return-button {
+        top: 150px;
+    }
+
+    .footer-container {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .modal-content {
+      width: 90%;
+    }
+  }

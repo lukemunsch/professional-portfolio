@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% load static %} {% block page_header %}
+{% endblock%} {% block content %}
+
+<div class="row">
+  <div class="col-10 offset-1 col-md-8 offset-md-2 my-5">
+    <div class="row profile-section">
+      <div class="col-12 col-md-4 text-center">
+        <img
+          class="profile-img mb-5"
+          src="media\profile-img.png"
+          alt="Luke Munsch profile image"
+        />
+      </div>
+      <div class="col-12 col-md-8">
+        <p class="tech-text">
+          Technical-minded with knowledge of <span class="tech">HTML</span>,
+          <span class="tech">CSS</span>, <span class="tech">Javascript</span>,
+          <span class="tech">SQL</span>, and
+          <span class="tech">Python</span> web development languages.
+        </p>
+        <br />
+        <p>
+          A motivated, well-disciplined and adaptable individual dedicated and
+          focused whether on solo projects or integrated in a larger team.
+        </p>
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

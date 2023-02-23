@@ -1,0 +1,73 @@
+<div id="imgModal" class="modal">
+  {% for p in chosen_project %}
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+
+  <!-- Main content for modal -->
+  <div class="modal-content">
+    <div class="row text-center mx-auto my-4">
+      <div class="col">
+        <div class="mySlides">
+          <img src="{{ p.proj_qr.url }}" />
+        </div>
+        <div class="mySlides">
+          <img src="{{ p.screengrab.url }}" />
+        </div>
+        <div class="mySlides">
+          {% if p.screengrab_2 %}
+          <img src="{{ p.screengrab_2.url }}" />
+          {% else %}
+          <img src="{{ MEDIA_URL }}noimage2.png" alt="This Project has no second screengrab image">
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col-12">
+        <div class="caption-container my-auto">
+          <p id="caption"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="row mt-3 mb-5 text-center">
+      <div class="col-4 mb-3">
+        <img
+          class="demo mb-5"
+          src="{{ p.proj_qr.url }}"
+          onclick="currentSlide(1)"
+          alt="{{ p.friendly_proj_name }} qr code"
+        />
+      </div>
+      <div class="col-4">
+        <img
+          class="demo mb-5"
+          src="{{ p.screengrab.url }}"
+          onclick="currentSlide(2)"
+          alt="{{ p.friendly_proj_name }} screengrab"
+        />
+      </div>
+      <div class="col-4">
+        {% if p.screengrab_2 %}
+        <img
+          class="demo mb-5"
+          src="{{ p.screengrab_2.url }}"
+          onclick="currentSlide(3)"
+          alt="{{ p.friendly_proj_name }} second screengrab"
+        />
+        {% else %}
+        <img
+          class="demo mb-5"
+          src="{{ MEDIA_URL }}noimage2.png"
+          onclick="currentSlide(3)"
+          alt="This Project has no second screengrab image"
+        />
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
