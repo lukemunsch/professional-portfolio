@@ -1,0 +1,49 @@
+{% extends 'base.html' %} {% load static %} {% block page_header %} {%endblock%}
+{% block content %}
+
+<div class="container">
+  <div class="row w-100">
+    <div class="col title-section">
+      <h3 class="my-3">Project Resume</h3>
+    </div>
+  </div>
+  <div class="row w-100">
+    <div class="col w-100">
+      <p><strong>
+        I have compiled a list of the projects that I have worked on since
+        starting my web development training.</strong>
+      </p>
+      <p><strong>
+        They are all created using multiple languages including HTML, CSS,
+        Javascript and Python, as well as different frameworks like Flask and
+        Django.</strong>
+      </h5>
+    </div>
+  </div>
+  <div class="row py-3 my-auto text-center">
+    {% for p in project %}
+        <div class="col-6 col-sm-4 offset-sm-0 col-xl-3">
+            <a href="{% url 'project_details' p.id %}" class="project-link">
+                <p class="project-item">{{ p.friendly_proj_name }}</p>   
+            </a>
+        </div>
+    {% if forloop.counter|divisibleby:2 %}
+    <div class="col-12 d-sm-none mb-3">
+        <hr class="dark-band">
+    </div>
+    {% endif %}
+    {% if forloop.counter|divisibleby:3 %}
+    <div class="col-12 d-none d-sm-block d-xl-none mb-3">
+        <hr class="dark-band">
+    </div>
+    {% endif %}
+    {% if forloop.counter|divisibleby:4 %}
+    <div class="col-12 d-none d-xl-block mb-3">
+        <hr class="dark-band">
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}

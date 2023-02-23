@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% load static %} {% block page_header %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-12"></div>
+  </div>
+  {% for p in chosen_project %}
+  <div class="row w-100">
+    <div class="col title-section">
+      <h3 class="my-4">
+        {{ p.friendly_proj_name }}
+      </h3>
+      <h4 class="language-list">
+        Languages used: {{ p.languages }}
+      </h4>
+    </div>
+  </div>
+  <div class="row w-100 mt-3">
+    <div class="d-none d-md-block col-md-2 offset-md-1">
+      <img
+        src="{{ p.proj_qr.url }}"
+        alt="{{ p.friendly_proj_name }} QR Code"
+        class="qr-img screengrab-img"
+        onclick="openModal();currentSlide1"
+      />
+    </div>
+    <div class="col-12 col-md-7">
+      <p class="text-justify">{{ p.proj_desc }}</p>
+    </div>
+  </div>
+
+  <!-- set up the links to source materials -->
+  <div class="row my-5 source-container">
+    {% if p.github_repo %}
+    <div class="col-12 col-md-4 offset-md-1">
+      <h4 class="text-underline">See my live site at:</h4>
+      <p class="source-link">
+        <a
+          href="{{ p.live_site }}"
+          target="_blank">{{ p.live_site }}
+        </a>
+      </p>
+    </div>
+    <div class="col-12 col-md-4 offset-md-1">
+      <h4 class="text-underline">Github Repo for project:</h4>
+      <p class="source-link">
+        <a
+          href="{{ p.github_repo }}"
+          target="_blank">{{ p.github_repo }}
+        </a>
+      </p>
+    </div>
+    {% else %}
+    <div class="col-12">
+      <h4 class="text-underline">See my live site at:</h4>
+      <p class="source-link">
+        <a
+          href="{{ p.live_site }}"
+          target="_blank">{{ p.live_site }}
+        </a>
+      </p>
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="row my-5">
+    {% if p.screengrab_2 %}
+    <div class="col-12 col-md-6 text-center">
+      <img
+        id="screen"
+        src="{{ p.screengrab.url }}"
+        alt="{{ p.friendly_proj_name }} screengrab from deployed site"
+        class="screengrab-img"
+        onclick="openModal();currentSlide2"
+      />
+    </div>
+    <div class="col-12 col-md-6 text-center mt-5">
+      <img
+        id="screen2"
+        src="{{ p.screengrab_2.url }}"
+        alt="{{ p.friendly_proj_name }} screengrab from deployed site"
+        class="screengrab-img"
+        onclick="openModal();currentSlide3"
+      />
+    </div>
+    {% else %}
+    <div class="col-12 text-center">
+      <img
+        id="screen1"
+        src="{{ p.screengrab.url }}"
+        alt="{{ p.friendly_proj_name }} screengrab from deployed site"
+        class="screengrab-img"
+        onclick="openModal();currentSlide2"
+      />
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+<!-- return to previous page -->
+<div class="return-button shadow-sm rounded-1">
+  <a
+    href="{% url 'resume' %}"
+    class="return-link d-flex h-100">
+      <i class="fas fa-arrow-left mx-auto my-auto"> <span class="return-text">Back to Projects</span></i>
+  </a>
+</div>
+
+<!-- Set up modal import from separate document -->
+{% include 'includes/modal.html' %}
+
+{% endblock content %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script src="{% static 'js\script.js' %}"></script>
+{% endblock %}

@@ -33,7 +33,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['https://lukemunsch-professional-portfolio.onrender.com/', '127.0.0.1']
 
 SITE_ID = 1
 
@@ -54,6 +54,11 @@ INSTALLED_APPS = [
 
     #Set up custom apps
     'home',
+    'resume',
+    'contact',
+    'hobbies',
+    'education',
+    'ghrepo',
 ]
 
 MIDDLEWARE = [
