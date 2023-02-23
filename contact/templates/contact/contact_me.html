@@ -1,0 +1,157 @@
+{% extends 'base.html' %} {% load static %} {% block page_header %} 
+{% endblock %} {% block content %}
+
+<div class="container">
+  <div class="row w-100">
+    <div class="col title-section">
+      <h3 class="my-3">Contact Details</h3>
+    </div>
+    <div class="col-12 text-justify">
+      Please feel free to reach out to me if you have a project or request. I am
+      open for working on any type of project
+    </div>
+  </div>
+  <div class="row my-5 text-center">
+    <div class="col-8 offset-2 px-0">
+      <nav>
+        <div class="row nav nav-tabs" id="nav-tab" role="tablist">
+          <button
+            class="col-8 offset-2 col-sm-3 offset-sm-0 nav-link active"
+            id="nav-call-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-call"
+            type="button"
+            role="tab"
+            aria-controls="nav-call"
+            aria-selected="true"
+          >
+            Call Me
+          </button>
+          <button
+            class="col-8 offset-2 col-sm-3 offset-sm-0 nav-link"
+            id="nav-email-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-email"
+            type="button"
+            role="tab"
+            aria-controls="nav-email"
+            aria-selected="false"
+          >
+            Email Me
+          </button>
+          <button
+            class="col-8 offset-2 col-sm-3 offset-sm-0 nav-link"
+            id="nav-linkedin-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-linkedin"
+            type="button"
+            role="tab"
+            aria-controls="nav-linkedin"
+            aria-selected="false"
+          >
+            LinkedIn
+          </button>
+          <button
+            class="col-8 offset-2 col-sm-3 offset-sm-0 nav-link"
+            id="nav-dlcv-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-dlcv"
+            type="button"
+            role="tab"
+            aria-controls="nav-dlcv"
+            aria-selected="false"
+          >
+            D/L CV
+          </button>
+        </div>
+      </nav>
+      <div class="tab-content py-5" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-call"
+          role="tabpanel"
+          aria-labelledby="nav-call-tab"
+          tabindex="0"
+        >
+          <p>
+            <strong
+              >Call me if you would like to have a chat regarding a project or
+              site.</strong
+            >
+          </p>
+          <a
+            href="tel:+447584651987"
+            onclick="return confirm('Head to phone app???')"
+          >
+            <h4 class="text-center pb-3 custom-font">
+              <i class="fas fa-phone-alt fa-xs"></i> +447584651987
+            </h4>
+          </a>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-email"
+          role="tabpanel"
+          aria-labelledby="nav-email-tab"
+          tabindex="0"
+        >
+          <p>
+            <strong
+              >If you prefer to send me an Email, then please send it
+              to:</strong
+            >
+          </p>
+          <a
+            onclick="return confirm('Head to E-mail app???')"
+            href="mailto:lpmunsch@gmail.com?subject='Enquiry_For_Luke'"
+          >
+            <h4 class="text-center custom-font-email pb-3">
+              <i class="fas fa-paper-plane fa-xs"></i> lpmunsch@gmail.com
+            </h4>
+          </a>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-linkedin"
+          role="tabpanel"
+          aria-labelledby="nav-linkedin-tab"
+          tabindex="0"
+        >
+          <p>
+            <strong
+              >Feel free to reach out to me or just view my online LinkedIn
+              profile.</strong
+            >
+          </p>
+          <h4>
+            <a
+              href="https://www.linkedin.com/in/luke-munsch-b4696020/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i> Luke Munsch - Profile</a
+            >
+          </h4>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-dlcv"
+          role="tabpanel"
+          aria-labelledby="nav-dlcv-tab"
+          tabindex="0"
+        >
+          <p>
+            <strong
+              >Download a copy of my CV if you would like to know more about
+              myself and my history.</strong
+            >
+          </p>
+          <a href="#">
+            <h4><i class="fas fa-download"></i></h4>
+            <h4>Download CV</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
