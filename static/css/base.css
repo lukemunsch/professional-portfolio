@@ -407,6 +407,10 @@ body {
 
 /* ---------- knowledge and skills --- */
 
+.div-border {
+    border-left: 2px solid black;
+}
+
 .progress {
     position: relative;
     height: 25px;
