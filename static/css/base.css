@@ -222,8 +222,9 @@ body {
     width: auto;
     position: fixed;
     bottom: 110px;
-    left: 20px;
+    left: 0px;
     padding: 5px;
+    cursor: pointer;
 }
 
 .return-link {
@@ -233,9 +234,7 @@ body {
     font-weight: 200;
 }
 
-.return-link:hover {
-    color: blue;
-}
+
 
 .source-container {
     background-color: rgba(0, 0, 0, 0.7);
@@ -517,7 +516,11 @@ body {
     }
 
     .return-button {
-        top: 150px;
+        top: 350px;
+    }
+
+    .return-text {
+        display: none;
     }
 
     .footer-container {
