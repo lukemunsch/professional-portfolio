@@ -1,92 +1,102 @@
-{% extends 'base.html' %} {% load static %} {% block page_header %}
-{% endblock %} {% block content %}
+{% extends 'base.html' %} {% load static %}
 
+<!-- Set up the page header templating -->
+{% block page_header %}
+{% endblock %}
+
+<!-- Set up the content for the page -->
+{% block content %}
 <div class="container">
   <div class="row w-100">
     <div class="col title-section">
       <h3 class="my-3">Knowledge and Education</h3>
     </div>
     <div class="col-12 text-justify">
-      I have studied web development with the Code Institute for a Full Stack Web Development diploma. I have included
-      the languages and frameworks I have experience with in this page so you can see what I am capable of.
+      I have studied web development with the Code Institute for a Full Stack
+      Web Development diploma. I have included the languages and frameworks I
+      have experience with in this page so you can see what I am capable of.
     </div>
   </div>
-  <div class="row">
+  <div class="row mt-5">
     <div class="col-12 col-md-4">
       <h4>Education</h4>
     </div>
     <div class="col-12 col-md-8">
-      <div class="row">
-        <div class="col">
-          <h4>Knowledge and Skills</h4>
-        </div>
-      </div>
-      <div class="row">
+      <h4 class="mb-3">Knowledge and Skills</h4>
+      <div class="row text-justify">
         <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
           <div class="row">
-            <div class="col-2">
-              <i class="three-reasons-icon fa fa-tv" aria-hidden="true"></i>
-            </div>
-            <div class="col-10">
-              <h4 class="three-reasons-heading uppercase">Front End</h4>
+            <div class="col">
+              <h4 class="uppercase">
+                <i class="fa fa-tv" aria-hidden="true"></i>
+                What you see
+              </h4>
               <p>
-                I'm skilled in User Experience Design using the trinity of HTML/CSS/Javascript. I also have extensive
-                experience in Front End Frameworks such as Angular and React
+                As the core concept of websites, I have skills creating visual
+                content using HTML/CSS, and JavaScript for the playful interactivity and . I have built numerous
+                projects using these languages for a range of services and
+                businesses.
               </p>
             </div>
           </div>
         </div>
         <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
           <div class="row">
-            <div class="col-2">
-              <i class="three-reasons-icon fa fa-gears" aria-hidden="true"></i>
-            </div>
+            <div class="col-2"></div>
             <div class="col-10">
-              <h4 class="three-reasons-heading uppercase">Back End</h4>
+              <h4 class="uppercase">
+                <i class="fa fa-gears" aria-hidden="true"></i>
+                Behind the Scenes
+              </h4>
               <p>
-                I specialize in data-driven web applications. Many of my projects utilise document-based data. I use
-                Python and Django in conjunction with MongoDB to process and present information.
+                The projects I have built utilize Django and python based
+                frameworks to produce the final results. Though they are data
+                driven- they are primarily document-based. For the processing
+                and presentation of information I pair my frameworks with SQL
+                databases.
               </p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Progress section -->
       <div class="row progress-section">
-        <div class="col">
+        <div class="col-12">
           <div class="progress">
             <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-              style="width:90%;">
+              style="width: 90%">
               <span class="sr-only">90% complete</span>
             </div>
             <span class="progress-type">HTML / HTML5</span>
           </div>
           <div class="progress">
             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-              aria-valuemax="100" style="width:80%;">
+              aria-valuemax="100" style="width: 80%">
               <span class="sr-only">80% complete</span>
             </div>
             <span class="progress-type">CSS / CSS3</span>
           </div>
           <div class="progress">
-            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-              aria-valuemax="100" style="width:70%;">
-              <span class="sr-only">70% complete</span>
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+              aria-valuemax="100" style="width: 60%">
+              <span class="sr-only">60% complete</span>
             </div>
             <span class="progress-type">JavaScript / jQuery</span>
           </div>
           <div class="progress">
             <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-              aria-valuemax="100" style="width:80%;">
+              aria-valuemax="100" style="width: 80%">
               <span class="sr-only">80% complete</span>
             </div>
             <span class="progress-type">Django / Python</span>
           </div>
           <div class="progress">
-            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-              aria-valuemax="100" style="width:80%;">
-              <span class="sr-only">80% complete</span>
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+              aria-valuemax="100" style="width: 75%">
+              <span class="sr-only">75% complete</span>
             </div>
-            <span class="progress-type">SQL / NoSQL</span>
+            <span class="progress-type">SQL/NoSQL</span>
           </div>
         </div>
       </div>
