@@ -261,7 +261,7 @@ body {
     overflow: auto;
     background-color: black;
 }
-  
+
 /* Modal Content */
 .modal-content {
     position: relative;
@@ -310,7 +310,7 @@ body {
     border-radius: 8px;
 }
 
-  /* Next & previous buttons */
+/* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -329,13 +329,13 @@ body {
     -webkit-user-select: none;
 }
 
-  /* Position the "next button" to the right */
+/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-  /* Number text (1/3 etc) */
+/* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -344,7 +344,7 @@ body {
     top: 0;
 }
 
-  /* Caption text */
+/* Caption text */
 .caption-container {
     text-align: center;
     height: 40px;
@@ -456,23 +456,44 @@ img.demo {
 
 /* ---------- education section --- */
 
-.timeline-item {
+.bg-orange {
+    background-color: rgba(190, 157, 10, 0.5);
+}
+
+.bg-cyan {
+    background-color: rgba(10, 148, 190, 0.5);
+}
+
+.ed-work-title {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.learn-item {
     padding: 4em 2em 0em 2em;
     position: relative;
-    color: #fafafa;
+    color: #000000;
     border-left: 1px solid;
 }
 
-.timeline-item p {
+.work-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #353535;
+    border-left: 1px solid;
+}
+
+.work-item p {
     padding: 0;
     margin: 0;
 }
 
-.timeline-item::before {
+.work-item::before,
+.learn-item::before {
     content: attr(data-dates);
     position: absolute;
-    left: 2.5em;
-    top: 3em;
+    left: 2em;
+    top: 2em;
     display: block;
     font-family: "Exo", sans-serif;
     font-weight: 500;
@@ -481,25 +502,22 @@ img.demo {
     margin: 0;
 }
 
-.timeline-item::after {
+.work-item::after,
+.learn-item::after {
     width: 12px;
     height: 12px;
     display: block;
-    top: 2.4em;
+    top: 1.6em;
     position: absolute;
     left: -6px;
     border-radius: 12px;
     content: '';
-    background: #fafafa;
-}
-
-.history-heading {
-    color: #fafafa;
-    margin-bottom: 50px;
+    background: #353535;
 }
 
 .history-items {
     margin-bottom: 30px;
+    border-radius: 0 8px 8px 0;
 }
 
 /*---------- media queries ---*/
@@ -525,6 +543,10 @@ img.demo {
 
     .footer-container {
         display: none;
+    }
+
+    .div-border {
+        border: 0;
     }
 }
 
