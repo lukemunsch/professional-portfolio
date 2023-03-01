@@ -469,21 +469,16 @@ img.demo {
     padding-top: 10px;
 }
 
-.learn-item {
+.learn-item,
+.work-item {
     padding: 4em 2em 0em 2em;
     position: relative;
     color: #000000;
     border-left: 1px solid;
 }
 
-.work-item {
-    padding: 4em 2em 0em 2em;
-    position: relative;
-    color: #353535;
-    border-left: 1px solid;
-}
-
-.work-item p {
+.work-item p,
+.learn-item p {
     padding: 0;
     margin: 0;
 }
