@@ -410,10 +410,22 @@ img.demo {
     max-width: 70%;
 }
 
+.btn {
+    border: 1px solid black;
+}
+
 .btn-green {
     background-color: #0b6103;
     color: aliceblue;
-    border: 1px solid black;
+}
+
+.btn-green:hover {
+    background-color: #25b818;
+}
+
+.btn-danger:hover {
+    background-color: red;
+    color: black;
 }
 
 /* ---------- knowledge and skills --- */

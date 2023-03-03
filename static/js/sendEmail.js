@@ -17,3 +17,8 @@ function sendMail(contactForm) {
     );
     return false;
 }
+
+function resetForm() {
+    document.getElementById("contact-form").reset;
+    console.log('Resetting form...')
+}

@@ -170,7 +170,7 @@
         Fill out the form below and I'll get back to you!
       </p>
       <div class="center-form">
-        <form onsubmit="return sendMail(this);">
+        <form id="contact-form" onsubmit="return sendMail(this);">
           <label for="name"><strong>Your Name</strong></label>
           <input
             type="text"
@@ -213,6 +213,9 @@
             <div class="col">
               <button type="submit" class="btn btn-green mt-3">
                 Send Project Request
+              </button>
+              <button type="reset" class="btn btn-danger mt-3" onclick="resetForm()">
+                Clear Form
               </button>
             </div>
           </div>
