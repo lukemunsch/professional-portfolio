@@ -10,16 +10,19 @@ function sendMail(contactForm) {
     .then(
         function (response) {
             console.log("SUCCESS!", response);
+            location.reload();
+            console.log('Resetting form...');
+            console.log('Form reset complete!');
         },
         function (error) {
             console.log("Failed...", error);
-        }
+        },
     );
     return false;
 }
 
 function resetForm() {
     document.getElementById("contact-form").reset;
-    console.log('Resetting form...')
-    console.log('Form reset complete!')
+    console.log('Resetting form...');
+    console.log('Form reset complete!');
 }
