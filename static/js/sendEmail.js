@@ -21,4 +21,5 @@ function sendMail(contactForm) {
 function resetForm() {
     document.getElementById("contact-form").reset;
     console.log('Resetting form...')
+    console.log('Form reset complete!')
 }
