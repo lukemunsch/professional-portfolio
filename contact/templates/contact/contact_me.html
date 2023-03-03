@@ -163,36 +163,42 @@
         </div>
       </div>
     </div>
-    <h3 class="text-center">OR...</h3>
+    <h3 class="d-md-none text-center">OR...</h3>
     <div class="col-12 col-md-6 my-5 div-border">
-      <h5>Want to Collaborate on a project?</h5>
-      <p>Fill out the form below and I'll get back to you!</p>
+      <h5 class="text-center">Want to Collaborate on a project?</h5>
+      <p class="text-center">Fill out the form below and I'll get back to you!</p>
       <div class="center-form">
         <form onsubmit="return sendMail(this);">
+          <label for="name"><strong>Your Name</strong></label>
           <input
             type="text"
             name="name"
             id="fullname"
             class="form-control mb-3"
-            placeholder="Your Name"
+            placeholder="Name"
             required
           />
+          <label for="contactnumber"><strong>Your Contact Number</strong></label>
           <input
             type="text"
-            name="name"
+            name="contactnumber"
             id="contactnumber"
             class="form-control mb-3"
-            placeholder="Your Contact Number"
+            placeholder="Contact Number"
             required
           />
+          <label for="emailaddress"><strong>Your Email Address</strong></label>
+
           <input
             type="email"
             name="emailaddress"
             id="emailaddress"
             class="form-control mb-3"
-            placeholder="Your Email address"
+            placeholder="Email address"
             required
           />
+          <label for="messagecontent"><strong>Your Message</strong></label>
+
           <textarea
             rows="5"
             name="messagecontent"
@@ -203,7 +209,7 @@
           ></textarea>
           <div class="form-row text-center">
             <div class="col">
-              <button type="submit" class="btn btn-danger mt-3">
+              <button type="submit" class="btn btn-green mt-3">
                 Send Project Request
               </button>
             </div>

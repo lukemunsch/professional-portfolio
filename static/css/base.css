@@ -410,6 +410,12 @@ img.demo {
     max-width: 70%;
 }
 
+.btn-green {
+    background-color: #0b6103;
+    color: aliceblue;
+    border: 1px solid black;
+}
+
 /* ---------- knowledge and skills --- */
 
 .div-border {

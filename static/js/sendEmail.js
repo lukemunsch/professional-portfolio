@@ -2,6 +2,7 @@ function sendMail(contactForm) {
     console.log("sending...");
     emailjs.send("gmail", "portfolio-template", {
             "from_name": contactForm.name.value,
+            "from_number": contactForm.contactnumber.value,
             "from_email": contactForm.emailaddress.value,
             "message_content": contactForm.messagecontent.value
     })
