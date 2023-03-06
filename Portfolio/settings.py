@@ -58,7 +58,6 @@ INSTALLED_APPS = [
     'contact',
     'hobbies',
     'education',
-    'ghrepo',
 ]
 
 MIDDLEWARE = [
