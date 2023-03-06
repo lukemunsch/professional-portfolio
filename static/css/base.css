@@ -68,6 +68,23 @@ body {
     padding: 0;
 }
 
+.name-btn {
+    height: 100px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.name-btn a {
+    height: 100px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.name-btn a i {
+    padding-top: 10px;
+    font-size: 40px;
+}
+
 .menuitem {
     height: 100px;
     text-align: center;
