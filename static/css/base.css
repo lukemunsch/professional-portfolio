@@ -101,6 +101,10 @@ body {
     letter-spacing: 1px;
 }
 
+a.bg-blue {
+    background-color: blue;
+}
+
 /*----------------------- Hover.css effects ---*/
 
 .hvr-sweep-to-top:before {

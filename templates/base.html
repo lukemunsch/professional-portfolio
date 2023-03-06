@@ -2,125 +2,161 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    {% block meta %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luke Munsch" />
+    <meta
+      name="description"
+      content="Technical Portfolio for the creative works of Luke Munsch"
+    />
 
-<head>
-  {% block meta %}
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Luke Munsch" />
-  <meta name="description" content="Technical Portfolio for the creative works of Luke Munsch" />
+    {% endblock %} {% block extra_meta %} {% endblock %} {% block corecss %}
 
-  {% endblock %}
-  {% block extra_meta %} {% endblock %}
+    <!--favicon-->
 
-  {% block corecss %}
+    <!--CSS only-->
 
-  <!--favicon-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-  <!--CSS only-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+      type="text/css"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
-    type="text/css" />
+    {% endblock %} {% block extra_css %}{% endblock extra_css %}
 
-  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+    <!-- core js scripts -->
+    {% block core_js %}
 
-  {% endblock %}
+    <!--fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/5889d2f18a.js"
+      crossorigin="anonymous"
+    ></script>
 
-  {% block extra_css %}{% endblock extra_css %}
-  {% block core_js %}
+    <!--jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
 
-  <!--fontawesome-->
-  <script src="https://kit.fontawesome.com/5889d2f18a.js" crossorigin="anonymous"></script>
+    <!--bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
 
-  <!--jquery-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_5eO9noqcNWgonydHagisl");
+      })();
+    </script>
 
-  <!--bootstrap-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
-  </script>
+    {% endblock %} {% block extra_js %}{% endblock %}
+    <title>Luke Munsch - Web Development Portfolio</title>
+  </head>
 
-  <!-- EmailJS -->
-  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js'></script>
-  <script type='text/javascript'>
-    (function () {
-      emailjs.init('user_5eO9noqcNWgonydHagisl');
-    })();
-  </script>
+  <!--Displayed content-->
 
-  {% endblock %} {% block extra_js %}{% endblock %}
-  <title>Luke Munsch - Web Development Portfolio</title>
-</head>
-
-<!--Displayed content-->
-
-<body>
-  <!--header-->
-  <header>
-    <div class="row text-center header-bar">
-      <div class="col pt-2">
-        <h1 class="top-header">Luke Munsch</h1>
-        <h3 class="subheader">Junior Full-Stack Web Developer</h3>
-        <p class="linkedin">
-          <a href="https://www.linkedin.com/in/luke-munsch-b4696020/" target="_blank">
-            <i class="fab fa-linkedin" aria-hidden="true"></i>
-            <span> LinkedIn Profile</span>
-          </a>
-          ||
-          <a href="#" target="_blank"><i class="fa fa-download" aria-hidden="true"></i><span> Download CV
-              File</span></a>
-        </p>
+  <body>
+    <!--header-->
+    <header>
+      <div class="row text-center header-bar">
+        <div class="col pt-2">
+          <h1 class="top-header">Luke Munsch</h1>
+          <h3 class="subheader">Junior Full-Stack Web Developer</h3>
+          <p class="linkedin">
+            <a
+              href="https://www.linkedin.com/in/luke-munsch-b4696020/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <span> LinkedIn Profile</span>
+            </a>
+            ||
+            <a href="{% static 'cv/luke-munsch-cv.docx' %}" target="_blank"
+              ><i class="fa fa-download" aria-hidden="true"></i
+              ><span> Download CV File</span></a
+            >
+          </p>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!--main content-->
-  <main>
-    {% block content %} {% endblock %}
+    <!--main content-->
+    <main>
+      {% block content %} {% endblock %}
 
-    <div class="container footer-container">
-      <div class="row">
-        <div class="col mb-5"></div>
+      <div class="container footer-container">
+        <div class="row">
+          <div class="col mb-5"></div>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <!--footer menu-->
-  <footer>
-    <div class="row no-gutters p-0 fixed-bottom">
-      <div class="d-none d-md-block col-md-12">
-        <ul id="nav" class="list-inline menucontainer row text-center">
-          <li class="col-md-2 menuitem my-auto">
-            <a href="{% url 'home' %}" class="hvr-sweep-to-top"><i class="fa fa-home" aria-hidden="true"></i><span>
-                Home</span></a>
-          </li>
-          <li class="col-md-2 menuitem my-auto">
-            <a href="{% url 'education' %}" class="hvr-sweep-to-top"><i class="fa fa-graduation-cap"
-                aria-hidden="true"></i><span> Knowledge / Education</span></a>
-          </li>
-          <li class="col-md-2 menuitem my-auto">
-            <a href="{% url 'resume' %}" class="hvr-sweep-to-top"><i class="fas fa-scroll" aria-hidden="true"></i><span>
-                Resume / Portfolio</span></a>
-          </li>
-          <li class="col-md-2 menuitem my-auto">
-            <a href="{% url 'contact' %}" class="hvr-sweep-to-top"><i class="fas fa-mobile-alt"
-                aria-hidden="true"></i><span> Contact / Social</span></a>
-          </li>
-          <li class="col-md-2 menuitem my-auto">
-            <a href="{% url 'hobbies' %}" class="hvr-sweep-to-top"><i class="fas fa-dice-d20"
-                aria-hidden="true"></i><span> Hobbies and Interests</span></a>
-          </li>
-        </ul>
+    <!--footer menu-->
+    <footer>
+      <div class="row no-gutters p-0 fixed-bottom">
+        <div class="d-none d-md-block col-md-12">
+          <ul id="nav" class="list-inline menucontainer row text-center">
+            <li class="col-md-2 menuitem my-auto">
+              <a href="{% url 'home' %}" class="hvr-sweep-to-top"
+                ><i class="fas fa-hat-wizard"></i><h5> Luke Munsch</h5></a
+              >
+            </li>
+            <li class="col-md-2 menuitem my-auto">
+              <a href="{% url 'home' %}" class="hvr-sweep-to-top"
+                ><i class="fa fa-home" aria-hidden="true"></i
+                ><span> Home</span></a
+              >
+            </li>
+            <li class="col-md-2 menuitem my-auto">
+              <a href="{% url 'education' %}" class="hvr-sweep-to-top"
+                ><i class="fa fa-graduation-cap" aria-hidden="true"></i
+                ><span> Knowledge / Education</span></a
+              >
+            </li>
+            <li class="col-md-2 menuitem my-auto">
+              <a href="{% url 'resume' %}" class="hvr-sweep-to-top"
+                ><i class="fas fa-scroll" aria-hidden="true"></i
+                ><span> Resume / Portfolio</span></a
+              >
+            </li>
+            <li class="col-md-2 menuitem my-auto">
+              <a href="{% url 'contact' %}" class="hvr-sweep-to-top"
+                ><i class="fas fa-mobile-alt" aria-hidden="true"></i
+                ><span> Contact / Social</span></a
+              >
+            </li>
+            <li class="col-md-2 menuitem my-auto">
+              <a href="{% url 'hobbies' %}" class="hvr-sweep-to-top"
+                ><i class="fas fa-dice-d20" aria-hidden="true"></i
+                ><span> Hobbies and Interests</span></a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    {% include 'includes/mobile-nav.html' %}
-  </footer>
-  {% block postloadjs %} {% endblock %}
-</body>
-
+      {% include 'includes/mobile-nav.html' %}
+    </footer>
+    {% block postloadjs %} {% endblock %}
+  </body>
 </html>
