@@ -425,6 +425,11 @@ img.demo {
     color: black;
 }
 
+.social-link i {
+    font-size: 50px;
+    color: aliceblue;
+}
+
 .center-form {
     padding-top: 10px;
     margin: 0 auto;

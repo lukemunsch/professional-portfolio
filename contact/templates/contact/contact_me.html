@@ -162,6 +162,23 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-4 text-center social-link">
+          <a href="https://www.facebook.com/LunchyMunschy" target="_blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+        </div>
+        <div class="col-md-4 text-center social-link">
+          <a href="https://github.com/lukemunsch" target="_blank"
+            ><i class="fab fa-github-square"></i
+          ></a>
+        </div>
+        <div class="col-md-4 text-center social-link">
+          <a href="https://www.linkedin.com/in/luke-munsch-b4696020/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
     </div>
     <h3 class="d-md-none text-center">OR...</h3>
     <div class="col-12 col-md-6 my-5 div-border">
@@ -214,7 +231,11 @@
               <button type="submit" class="btn btn-green mt-3">
                 Send Project Request
               </button>
-              <button type="reset" class="btn btn-danger mt-3" onclick="resetForm()">
+              <button
+                type="reset"
+                class="btn btn-danger mt-3"
+                onclick="resetForm()"
+              >
                 Clear Form
               </button>
             </div>
@@ -225,10 +246,7 @@
   </div>
 </div>
 
-{% endblock content %}
-
-{% block postloadjs %}
-{{ block.super }}
+{% endblock content %} {% block postloadjs %} {{ block.super }}
 <script src="{% static 'js/sendEmail.js' %}"></script>
 
 {% endblock %}
