@@ -26,3 +26,5 @@ urlpatterns = [
     path('hobbies/', include('hobbies.urls')),
     path('education/', include('education.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = "Portfolio.views.page_not_found_view"

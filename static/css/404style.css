@@ -1,0 +1,19 @@
+.body-color {
+    background-color: rgba(95, 95, 155, 0.452);
+}
+
+.empty {
+    align-items: center;
+    height: 85%;
+    width: 100%;
+    border: 20px inset black;
+    background-color: bisque;
+    position: relative;
+}
+
+.empty img  {
+    height: 100px;
+    position: absolute;
+    bottom: 40px;
+    right: 30%;
+}
