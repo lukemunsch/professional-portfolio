@@ -574,6 +574,10 @@ img.demo {
 }
 
 @media (max-width:767px) {
+    .menuitem a h3 {
+        font-size: 120%;
+    }
+
     .title-section {
         text-align: center;
     }
