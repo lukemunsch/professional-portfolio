@@ -1,5 +1,5 @@
-from django.shortcuts import render
+from django.views.defaults import page_not_found
 
 
 def page_not_found_view(request, exception):
-    return render(request, '404.html', status=404)
+    return page_not_found(request, '404.html', status=404)
