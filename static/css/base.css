@@ -13,7 +13,7 @@
 /* base.html styles */
 
 body {
-    background: url('/media/main-wallpaper.png') no-repeat center center fixed;
+    background: url('/static/img/main-wallpaper.png') no-repeat center center fixed;
     background-size: cover;
     overflow-x: hidden;
     height: calc(100vh - 100px);
