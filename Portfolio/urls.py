@@ -28,3 +28,4 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = "Portfolio.views.page_not_found_view"
+handler500 = "Portfolio.views.something_went_wrong"
