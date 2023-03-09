@@ -30,8 +30,7 @@
         src="{{ p.proj_qr.url }}"
         alt="{{ p.friendly_proj_name }} QR Code"
         class="qr-img screengrab-img"
-        onclick="openModal();currentSlide1"
-      />
+        onclick="openModal();currentSlide1">
     </div>
     <div class="col-12 col-md-7">
       <p class="text-justify">{{ p.proj_desc }}</p>
@@ -80,8 +79,7 @@
         src="{{ p.screengrab.url }}"
         alt="{{ p.friendly_proj_name }} screengrab from deployed site"
         class="screengrab-img"
-        onclick="openModal();currentSlide2"
-      />
+        onclick="openModal();currentSlide2">
     </div>
     <div class="col-12 col-md-6 text-center mt-5">
       <img
@@ -89,8 +87,7 @@
         src="{{ p.screengrab_2.url }}"
         alt="{{ p.friendly_proj_name }} screengrab from deployed site"
         class="screengrab-img"
-        onclick="openModal();currentSlide3"
-      />
+        onclick="openModal();currentSlide3">
     </div>
     {% else %}
     <div class="col-12 text-center">
@@ -99,8 +96,7 @@
         src="{{ p.screengrab.url }}"
         alt="{{ p.friendly_proj_name }} screengrab from deployed site"
         class="screengrab-img"
-        onclick="openModal();currentSlide2"
-      />
+        onclick="openModal();currentSlide2">
     </div>
     {% endif %}
   </div>
@@ -112,7 +108,7 @@
   <a
     href="{% url 'resume' %}"
     class="return-link d-flex h-100">
-      <i class="fas fa-arrow-left mx-auto my-auto"><span class="return-text"> Back to Projects</span></i>
+      <i class="fas fa-arrow-left mx-auto my-auto"></i><span class="return-text"> Back to Projects</span>
   </a>
 </div>
 

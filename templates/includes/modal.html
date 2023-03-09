@@ -7,16 +7,24 @@
     <div class="row text-center mx-auto my-4">
       <div class="col">
         <div class="mySlides">
-          <img src="{{ p.proj_qr.url }}" />
+          <img 
+            src="{{ p.proj_qr.url }}"
+            alt="{{ p.friendly_proj_name }} QR Code">
         </div>
         <div class="mySlides">
-          <img src="{{ p.screengrab.url }}" />
+          <img
+            src="{{ p.screengrab.url }}"
+            alt="{{ p.friendly_proj_name }} screengrab from deployed site">
         </div>
         <div class="mySlides">
           {% if p.screengrab_2 %}
-          <img src="{{ p.screengrab_2.url }}" />
+          <img
+            src="{{ p.screengrab_2.url }}"
+            alt="{{ p.friendly_proj_name }} second screengrab of site">
           {% else %}
-          <img src="{{ MEDIA_URL }}noimage2.png" alt="This Project has no second screengrab image">
+          <img
+            src="{{ MEDIA_URL }}noimage2.png"
+            alt="This Project has no second screengrab image">
           {% endif %}
         </div>
       </div>
@@ -39,16 +47,14 @@
           class="demo mb-5"
           src="{{ p.proj_qr.url }}"
           onclick="currentSlide(1)"
-          alt="{{ p.friendly_proj_name }} qr code"
-        />
+          alt="{{ p.friendly_proj_name }} qr code">
       </div>
       <div class="col-4">
         <img
           class="demo mb-5"
           src="{{ p.screengrab.url }}"
           onclick="currentSlide(2)"
-          alt="{{ p.friendly_proj_name }} screengrab"
-        />
+          alt="{{ p.friendly_proj_name }} screengrab">
       </div>
       <div class="col-4">
         {% if p.screengrab_2 %}
@@ -56,15 +62,13 @@
           class="demo mb-5"
           src="{{ p.screengrab_2.url }}"
           onclick="currentSlide(3)"
-          alt="{{ p.friendly_proj_name }} second screengrab"
-        />
+          alt="{{ p.friendly_proj_name }} second screengrab">
         {% else %}
         <img
           class="demo mb-5"
           src="{{ MEDIA_URL }}noimage2.png"
           onclick="currentSlide(3)"
-          alt="This Project has no second screengrab image"
-        />
+          alt="This Project has no second screengrab image">
         {% endif %}
       </div>
     </div>
