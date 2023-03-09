@@ -68,6 +68,14 @@ body {
     padding: 0;
 }
 
+#small-nav {
+    margin: 0;
+}
+
+#small-nav li {
+    padding: 0;
+}
+
 .name-btn {
     height: 100px;
     text-align: center;
