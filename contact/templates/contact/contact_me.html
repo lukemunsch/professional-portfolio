@@ -33,8 +33,7 @@
                 type="button"
                 role="tab"
                 aria-controls="nav-call"
-                aria-selected="true"
-              >
+                aria-selected="true">
                 Call Me
               </button>
               <button
@@ -45,8 +44,7 @@
                 type="button"
                 role="tab"
                 aria-controls="nav-email"
-                aria-selected="false"
-              >
+                aria-selected="false">
                 Email Me
               </button>
               <button
@@ -57,8 +55,7 @@
                 type="button"
                 role="tab"
                 aria-controls="nav-linkedin"
-                aria-selected="false"
-              >
+                aria-selected="false">
                 LinkedIn
               </button>
               <button
@@ -69,8 +66,7 @@
                 type="button"
                 role="tab"
                 aria-controls="nav-dlcv"
-                aria-selected="false"
-              >
+                aria-selected="false">
                 D/L CV
               </button>
             </div>
@@ -81,18 +77,15 @@
               id="nav-call"
               role="tabpanel"
               aria-labelledby="nav-call-tab"
-              tabindex="0"
-            >
+              tabindex="0">
               <p>
                 <strong
                   >Call me if you would like to have a chat regarding a project
-                  or site.</strong
-                >
+                  or site.</strong>
               </p>
               <a
                 href="tel:+447584651987"
-                onclick="return confirm('Head to phone app???')"
-              >
+                onclick="return confirm('Head to phone app???')">
                 <h4 class="text-center pb-3 custom-font">
                   <i class="fas fa-phone-alt fa-xs"></i> +447584651987
                 </h4>
@@ -103,18 +96,15 @@
               id="nav-email"
               role="tabpanel"
               aria-labelledby="nav-email-tab"
-              tabindex="0"
-            >
+              tabindex="0">
               <p>
                 <strong
                   >If you prefer to send me an Email, then please send it
-                  to:</strong
-                >
+                  to:</strong>
               </p>
               <a
                 onclick="return confirm('Head to E-mail app???')"
-                href="mailto:lpmunsch@gmail.com?subject='Enquiry_For_Luke'"
-              >
+                href="mailto:lpmunsch@gmail.com?subject='Enquiry_For_Luke'">
                 <h4 class="text-center custom-font-email pb-3">
                   <i class="fas fa-paper-plane fa-xs"></i> lpmunsch@gmail.com
                 </h4>
@@ -125,20 +115,17 @@
               id="nav-linkedin"
               role="tabpanel"
               aria-labelledby="nav-linkedin-tab"
-              tabindex="0"
-            >
+              tabindex="0">
               <p>
                 <strong
                   >Feel free to reach out to me or just view my online LinkedIn
-                  profile.</strong
-                >
+                  profile.</strong>
               </p>
               <h4>
                 <a
                   href="https://www.linkedin.com/in/luke-munsch-b4696020/"
-                  target="_blank"
-                  ><i class="fab fa-linkedin"></i> Luke Munsch - Profile</a
-                >
+                  target="_blank">
+                  <i class="fab fa-linkedin"></i> Luke Munsch - Profile</a>
               </h4>
             </div>
             <div
@@ -146,16 +133,14 @@
               id="nav-dlcv"
               role="tabpanel"
               aria-labelledby="nav-dlcv-tab"
-              tabindex="0"
-            >
+              tabindex="0">
               <p>
                 <strong
                   >Download a copy of my CV if you would like to know more about
-                  myself and my history.</strong
-                >
+                  myself and my history.</strong>
               </p>
-              <a href="#">
-                <h4><i class="fas fa-download"></i></h4>
+              <a href="{% static 'cv/luke-munsch-cv.docx' %}">
+                <i class="fas fa-download"></i>
                 <h4>Download CV</h4>
               </a>
             </div>
@@ -164,19 +149,19 @@
       </div>
       <div class="row mb-5">
         <div class="col-4 text-center social-link">
-          <a href="https://www.facebook.com/LunchyMunschy" target="_blank"
-            ><i class="fab fa-facebook-square"></i
-          ></a>
+          <a href="https://www.facebook.com/LunchyMunschy" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </a>
         </div>
         <div class="col-4 text-center social-link">
-          <a href="https://github.com/lukemunsch" target="_blank"
-            ><i class="fab fa-github-square"></i
-          ></a>
+          <a href="https://github.com/lukemunsch" target="_blank">
+            <i class="fab fa-github-square"></i>
+          </a>
         </div>
         <div class="col-4 text-center social-link">
-          <a href="https://www.linkedin.com/in/luke-munsch-b4696020/" target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
+          <a href="https://www.linkedin.com/in/luke-munsch-b4696020/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -188,35 +173,34 @@
       </p>
       <div class="center-form">
         <form id="contact-form" onsubmit="return sendMail(this);">
-          <label for="name"><strong>Your Name</strong></label>
+          <label for="fullname"><strong>Your Name</strong></label>
           <input
             type="text"
             name="name"
             id="fullname"
             class="form-control mb-3"
             placeholder="Name"
-            required
-          />
-          <label for="contactnumber"
-            ><strong>Your Contact Number</strong></label
-          >
+            required>
+          <label for="contactnumber">
+            <strong>Your Contact Number</strong>
+          </label>
           <input
             type="text"
             name="contactnumber"
             id="contactnumber"
             class="form-control mb-3"
             placeholder="Contact Number"
-            required
-          />
-          <label for="emailaddress"><strong>Your Email Address</strong></label>
+            required>
+          <label for="emailaddress">
+            <strong>Your Email Address</strong>
+          </label>
           <input
             type="email"
             name="emailaddress"
             id="emailaddress"
             class="form-control mb-3"
             placeholder="Email address"
-            required
-          />
+            required>
           <label for="messagecontent"><strong>Your Message</strong></label>
           <textarea
             rows="5"
@@ -224,8 +208,7 @@
             id="messagecontent"
             class="form-control"
             placeholder="Add your message here"
-            required
-          ></textarea>
+            required></textarea>
           <div class="form-row text-center">
             <div class="col">
               <button type="submit" class="btn btn-green mt-3">
@@ -234,8 +217,7 @@
               <button
                 type="reset"
                 class="btn btn-danger mt-3"
-                onclick="resetForm()"
-              >
+                onclick="resetForm()">
                 Clear Form
               </button>
             </div>
