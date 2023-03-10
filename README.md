@@ -99,6 +99,8 @@ Here is the generated report for each page, showing they have been passed throug
 
 [404 Style](media/READMEImages/404-css-w3c.png)
 
+### PEP8 Compliance
+
 ## Unfixed Bugs
 
 <!-- Is there any -->

@@ -6,6 +6,7 @@ from .models import Project
 
 # Register your models here.
 
+
 class ProjectAdmin(admin.ModelAdmin):
     """set up how to view models in admin"""
     list_display = (
