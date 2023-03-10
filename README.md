@@ -43,7 +43,24 @@ The menu I had in mind is a fixed menu at the bottom of the page; similar in sty
 
 ## Testing
 
-<!-- Create testing reports for each page -->
+Here is the generated report for each page, showing they have been passed through validators for each of their respective languages:
+
+### HTML Testing
+
+[Index Page](media\READMEImages\index-w3c.png)
+
+[Education Page](media\READMEImages\index-w3c.png)
+
+[Contact Page](media\READMEImages\index-w3c.png)
+
+[Resume Page](media\READMEImages\index-w3c.png)
+
+[Resume Project Page](media\READMEImages\index-w3c.png)
+
+[Interests Page](media\READMEImages\index-w3c.png)
+
+### CSS Testing
+
 
 ## Unfixed Bugs
 
