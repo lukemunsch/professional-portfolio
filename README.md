@@ -8,7 +8,7 @@
 2. [Overview](#overview)
 3. [User Stories](#user-stories)
 4. [Features](#features)
-   1. [Index Page](#index-page)
+   1. [Header, Menu and Index Page](#header-menu-and-index-page)
 5. [Testing](#testing)
    1. [Lighthouse Reports](#lighthouse-reports)
 6. [Unfixed Bugs](#unfixed-bugs)
@@ -35,9 +35,11 @@ On further journies to my site, there will be new content as I continue to build
 
 ## Features
 
-### Header and Main Nav
+### Header, Menu and Index Page
 
-<!-- Write list of features and their descriptions -->
+I created a simple header element which shows my name, job title and links to the most popular and professional sites; LinkedIn and my CV for download purposes. As I have opted for a colourful background across the main pages, I chose not to have any advanced or conflicting colours for the header; plain black with slightly off white writing, a slightly lighter hover link color compared to the standard which would have been dark blue on a background of black.
+
+The menu I had in mind is a fixed menu at the bottom of the page; similar in style to the header at the top, simple off white writing, but i also wanted to have a clear hover diference, and chose a green hover colour which also has a transition to add some slightly more interesting style to my site.
 
 ## Testing
 
