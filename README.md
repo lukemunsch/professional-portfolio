@@ -41,6 +41,40 @@ I created a simple header element which shows my name, job title and links to th
 
 The menu I had in mind is a fixed menu at the bottom of the page; similar in style to the header at the top, simple off white writing, but i also wanted to have a clear hover diference, and chose a green hover colour which also has a transition to add some slightly more interesting style to my site.
 
+For the main content text detailing briefly what I am all about, I again stayed with simple text and made the most important words in the sentences bold and white compared to the bulk of black writing.
+
+![Index Page Screenshot](media/READMEImages/header-menu-index-ss.png)
+
+### Knowledge Page
+
+For my knowledge and skills page, I also encoroprated a work experience section that allows viewers to see what I have done for work previously and what education i have achieved.
+
+I broke the page into halves; education and work experience on the left and blocks with skills below it on the right.
+
+For the education and work experience,  they are in their own blocks, back on different colours with bullet points on the left hand side of the block - giving it the appearance of a timeline.
+
+The knowledge and education section explains what I have used and what I have knowledge of, both front-end and back-end languages.
+
+![Knowledge adn Education](media/READMEImages/knowledge-education-ss.png)
+
+### Resume
+
+
+
+![Resume Page](media/READMEImages/resume-ss.png)
+
+### Project Display
+
+![Project Display Page](media/READMEImages/project-display-ss.png)
+
+### Contact Page
+
+![Contact and Social Page](media/READMEImages/contact-ss.png)
+
+### Interests Page
+
+![Interests Page](media/READMEImages/interests-ss.png)
+
 ## Testing
 
 Here is the generated report for each page, showing they have been passed through validators for each of their respective languages:
@@ -64,6 +98,7 @@ Here is the generated report for each page, showing they have been passed throug
 [Base CSS](media/READMEImages/base-css-w3c.png)
 
 [404 Style](media/READMEImages/404-css-w3c.png)
+
 ## Unfixed Bugs
 
 <!-- Is there any -->
