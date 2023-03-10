@@ -47,23 +47,23 @@ Here is the generated report for each page, showing they have been passed throug
 
 ### HTML Testing
 
-![Index Page](media\READMEImages\index-w3c.png)
+[Index Page](media/READMEImages/index-w3c.png)
 
-[Education Page](media\READMEImages\education-w3c.png)
+[Education Page](media/READMEImages/education-w3c.png)
 
-[Contact Page](media\READMEImages\contact-w3c.png)
+[Contact Page](media/READMEImages/contact-w3c.png)
 
-[Resume Page](media\READMEImages\resume-w3c.png)
+[Resume Page](media/READMEImages/resume-w3c.png)
 
-[Resume Project Page](media\READMEImages\resume-project-w3c.png)
+[Resume Project Page](media/READMEImages/resume-project-w3c.png)
 
-[Interests Page](media\READMEImages\index-w3c.png)
+[Interests Page](media/READMEImages/index-w3c.png)
 
 ### CSS Testing
 
-[Base CSS](media\READMEImages\base-css-w3c.png)
+[Base CSS](media/READMEImages/base-css-w3c.png)
 
-[404 Style](media\READMEImages\404-css-w3c.png)
+[404 Style](media/READMEImages/404-css-w3c.png)
 ## Unfixed Bugs
 
 <!-- Is there any -->
