@@ -189,6 +189,7 @@ a.bg-blue {
     font-family: 'Andika', Arial, Helvetica, sans-serif;
     font-weight: 700;
     border: 2px solid black;
+    border-radius: 10px;
     height: 70px;
     padding: 10px;
 }

@@ -59,7 +59,7 @@ The knowledge and education section explains what I have used and what I have kn
 
 ### Resume
 
-
+On the resumé page, it is a simple button 
 
 ![Resume Page](media/READMEImages/resume-ss.png)
 
