@@ -51,9 +51,11 @@ For my knowledge and skills page, I also encoroprated a work experience section 
 
 I broke the page into halves; education and work experience on the left and blocks with skills below it on the right.
 
-For the education and work experience,  they are in their own blocks, back on different colours with bullet points on the left hand side of the block - giving it the appearance of a timeline.
+For the education and work experience, they are in their own blocks, back on different colours with bullet points on the left hand side of the block - giving it the appearance of a timeline.
 
 The knowledge and education section explains what I have used and what I have knowledge of, both front-end and back-end languages.
+
+I have also created a stack of language sliders to show the sort of levels I think my knowledge is.
 
 ![Knowledge adn Education](media/READMEImages/knowledge-education-ss.png)
 
@@ -83,11 +85,17 @@ I also created a modal that pops up when you click on one of the images; the QR,
 
 My contact page is split into two halves; We have an information on methods to contact me and links for social media on the first half, the second half is a simple contact form that sends an email using EmailJS directly to the developer.
 
-The information for contacting the developer is displayed in a multi-tabbed box; Each tab in the header changes the information in the contents depending on what you are trying to get at. Hovering over a tab has the same efect as hovering over the other links on previous pages. The actual information on each tab has a hover effect to make the text all uppercase and black, as well as being direct links so that if you are using a mobile you can make calls and send emails and download files and links to 
+The information for contacting the developer is displayed in a multi-tabbed box; Each tab in the header changes the information in the contents depending on what you are trying to get at. Hovering over a tab has the same efect as hovering over the other links on previous pages. The actual information on each tab has a hover effect to make the text all uppercase and black, as well as being direct links so that if you are using a mobile you can make calls and send emails and download files and link to my LinkedIn.
+
+Under the contact information there are links to Facebook for social and Github if anyone wants to look at my full list of Repositories. This is in a similar style to the links on the resumé page.
+
+For the contact form, it is simple headered fields with a send and clear button at the bottom of the form to submit or remove information.
 
 ![Contact and Social Page](media/READMEImages/contact-ss.png)
 
 ### **Interests Page**
+
+This page is less to do with coding and my web development, so the page is simple text explaining about my other interests and experiences for other work that I have done at the radio station in Guildford.
 
 ![Interests Page](media/READMEImages/interests-ss.png)
 
