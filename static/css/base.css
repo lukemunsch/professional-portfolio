@@ -443,6 +443,10 @@ img.demo {
     color: aliceblue;
 }
 
+.social-link i:hover {
+    color: rgb(85, 185, 255);
+}
+
 .center-form {
     padding-top: 10px;
     margin: 0 auto;

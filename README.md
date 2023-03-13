@@ -81,6 +81,8 @@ I also created a modal that pops up when you click on one of the images; the QR,
 
 ### **Contact Page**
 
+
+
 ![Contact and Social Page](media/READMEImages/contact-ss.png)
 
 ### **Interests Page**
