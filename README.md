@@ -133,7 +133,36 @@ The Modal for the images on the project always displays the last selection image
 
 ## **Deployment**
 
-<!-- How -->
+To deploy Luke's Professional Portfolio, allow other people to run the app and see it working, there are 3 methods to allow you to complete these actions:
+
+### Forking and Cloning
+
+Accessing GitHub and navigating to my repositories will allow users to copy my code directly from the source, either by forking or cloning: Accessing the Professional Portfolio repository and clicking on the code button next to Gitpod link will bring up a menu to create a repository of your own in your own GitHub repo. There is also the Download zip file option which will allow you to save a copy of my code as well.
+
+### Local Deployment
+
+For local deployment of Luke's Professional Portfolio, I will be using the VS Code project to edit and run my workspace;
+- From GitHub, once the repository has been created (either as a new project or by forking/cloning) I will then load VS Code with a new window and using the command pallette I will clone the repository, which pulls the information down from Github to my new window. I can then save the information to a new folder on my local harddrive instead of requiring a pull each time from Github.
+- You will also need to complete the installation of packages that I have created in the current version of the site to your lcoally created virtual environments
+
+        pip3 install -r requirements.txt
+
+- We need to set up some of the environmental variables that are used on our site, but due to the nature of secret codes that external users should NOT know about, we keep them in an env.py file and declare it in the .gitignore file to avoid the secrets being made less secret. An example of an env.py file is as such;
+
+         import os
+
+            os.environ['DEVELOPMENT']="True"
+            os.environ['SECRET_KEY']="secret_key_value_here"
+            os.environ['DATABASE_URL']="db_value_here"
+
+### Remote Deployment
+
+For the deployment of Luke's Professional Portfolio, there are several steps required for completing deployment;
+
+- We are using the site Render for out deployment;
+   - In render dashboard, crete a new Web Service and give it a name befitting your project. You can use the same name as your Github Repo.
+- We need to make sure that a couple of our environmental variables are added to the Environment section in the new Web Service.
+   - Adding the variables for our secret key and our Database urlthe details must match what we have added to the env.py from the local deployment section.
 
 ## **Credits**
 
