@@ -59,11 +59,15 @@ The knowledge and education section explains what I have used and what I have kn
 
 ### Resume
 
-On the resumé page, it is a simple button 
+On the resumé page, I created a simple button arrangement for each item in the database iterated through. The buttons have a hover effect that is the same colour as the effect for text links. They have dividers between each one so that the format looks tidier.
+
+The contents of the button are based on the friendly name for the project that is targeted. Most of the project names are no more than three words long and so they all fit in the button space nicely with text that matches with the rest of the document.
 
 ![Resume Page](media/READMEImages/resume-ss.png)
 
 ### Project Display
+
+My project's display page is more advanced depending on the size of the screen; as most views on mobile wont need a qr code to be able to view it on another mobile device, I chose to hide the QR code on the actual page so that the viewers can read through the content
 
 ![Project Display Page](media/READMEImages/project-display-ss.png)
 
