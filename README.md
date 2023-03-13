@@ -81,7 +81,9 @@ I also created a modal that pops up when you click on one of the images; the QR,
 
 ### **Contact Page**
 
+My contact page is split into two halves; We have an information on methods to contact me and links for social media on the first half, the second half is a simple contact form that sends an email using EmailJS directly to the developer.
 
+The information for contacting the developer is displayed in a multi-tabbed box; Each tab in the header changes the information in the contents depending on what you are trying to get at. Hovering over a tab has the same efect as hovering over the other links on previous pages. The actual information on each tab has a hover effect to make the text all uppercase and black, as well as being direct links so that if you are using a mobile you can make calls and send emails and download files and links to 
 
 ![Contact and Social Page](media/READMEImages/contact-ss.png)
 
