@@ -263,7 +263,11 @@ a.bg-blue {
     font-weight: 200;
 }
 
-
+.return-text {
+    font-size: 110%;
+    padding-top: 2px;
+    padding-left: 5px;
+}
 
 .source-container {
     background-color: rgba(0, 0, 0, 0.8);
