@@ -20,6 +20,9 @@
    3. [PEP8 Compliance](#pep8-compliance)
 6. [Unfixed Bugs](#unfixed-bugs)
 7. [Deployment](#deployment)
+   1. [Forking and Cloning](#forking-and-cloning)
+   2. [Local Deployment](#local-deployment)
+   3. [Remote Deployment](#remote-deployment)
 8. [Credits](#credits)
 
 ## **Link To Live Site**
