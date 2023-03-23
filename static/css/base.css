@@ -13,7 +13,7 @@
 /* base.html styles */
 
 body {
-    background: url('/static/img/main-wallpaper.png') no-repeat center center fixed;
+    background-color: rgb(240, 240, 240);
     background-size: cover;
     overflow-x: hidden;
     height: calc(100vh - 100px);
@@ -52,7 +52,7 @@ body {
 }
 
 .linkedin a:hover {
-    color: rgb(85, 185, 255);
+    color: rgb(20, 175, 0);
 }
 
 .menucontainer {
@@ -74,6 +74,10 @@ body {
 
 #small-nav li {
     padding: 0;
+}
+
+.personal-link:hover {
+    color: rgb(20, 175, 0);
 }
 
 .name-btn {
@@ -126,10 +130,6 @@ body {
     letter-spacing: 1px;
 }
 
-a.bg-blue {
-    background-color: blue;
-}
-
 /*----------------------- Hover.css effects ---*/
 
 .hvr-sweep-to-top:before {
@@ -163,7 +163,7 @@ a.bg-blue {
 }
 
 .tech {
-    color: aliceblue;
+    color: rgb(20, 175, 0);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -197,7 +197,7 @@ a.bg-blue {
 .project-item:hover {
     text-decoration: underline;
     text-underline-position: under;
-    background-color: rgb(85, 185, 255);
+    background-color: rgb(20, 175, 0);
     color: black;
 }
 
@@ -207,7 +207,7 @@ a.bg-blue {
     font-size: 100%;
     font-weight: 400;
     text-transform: lowercase;
-    color: aliceblue;
+    color: rgb(20, 175, 0);
 }
 
 .qr-img {
@@ -240,13 +240,13 @@ a.bg-blue {
 }
 
 .source-link a:hover {
-    color: rgb(85, 185, 255);
+    color: rgb(20, 175, 0);
 }
 
 /* button for returning to previous page */
 .return-button {
     text-decoration: none;
-    background-color: rgba(85, 185, 255, 0.3);
+    background-color: rgba(14, 155, 1, 0.3);
     border: 1px solid rgba(0, 0, 0, 0.8);
     height: 42px;
     width: auto;
@@ -268,6 +268,10 @@ a.bg-blue {
     font-size: 110%;
     padding-top: 2px;
     padding-left: 5px;
+}
+
+.return-link:hover {
+    color: black;
 }
 
 .source-container {
@@ -322,7 +326,7 @@ a.bg-blue {
 
 .close:hover,
 .close:focus {
-    color: rgb(85, 185, 255);
+    color: rgb(20, 175, 0);
     text-decoration: none;
     cursor: pointer;
 }
@@ -369,15 +373,6 @@ a.bg-blue {
     border-radius: 3px 0 0 3px;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
 /* Caption text */
 .caption-container {
     text-align: center;
@@ -405,11 +400,11 @@ img.demo {
 
 .nav-link {
     font-family: 'Oswald', Arial, sans-serif;
-    color: aliceblue;
+    color: rgb(20, 175, 0);
 }
 
 .nav-link:hover {
-    background-color: rgb(85, 185, 255);
+    background-color: rgb(20, 175, 0);
     color: black;
     border: 2px solid black;
     border-bottom: 0px;
@@ -435,7 +430,7 @@ img.demo {
 
 .tab-content a:hover {
     text-transform: uppercase;
-    color: black;
+    color: rgb(15, 120, 0);
 }
 
 .social-link i {
@@ -444,7 +439,7 @@ img.demo {
 }
 
 .social-link i:hover {
-    color: rgb(85, 185, 255);
+    color: rgb(20, 175, 0);
 }
 
 .center-form {
