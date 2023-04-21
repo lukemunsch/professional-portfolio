@@ -17,6 +17,7 @@ body {
     background-size: cover;
     overflow-x: hidden;
     height: calc(100vh - 100px);
+    width: 99.9%;
 }
 
 .top-header {
@@ -128,6 +129,10 @@ body {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 1px;
+}
+
+.menu-name {
+
 }
 
 /*----------------------- Hover.css effects ---*/
