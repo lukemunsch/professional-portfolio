@@ -17,6 +17,7 @@ body {
     background-size: cover;
     overflow-x: hidden;
     height: calc(100vh - 100px);
+    width: 99.9%;
 }
 
 .top-header {
@@ -95,6 +96,10 @@ body {
 .name-btn a i {
     padding-top: 10px;
     font-size: 40px;
+}
+
+.menu-name {
+    font-size: 90%;
 }
 
 .menuitem {
