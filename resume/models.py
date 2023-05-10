@@ -46,7 +46,7 @@ class Project(models.Model):
 
     class Meta:
         """Set up how the projects are ordered"""
-        ordering = ['name']
+        ordering = ['project_name']
 
     def __str__(self):
         """return string value"""
