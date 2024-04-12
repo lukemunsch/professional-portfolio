@@ -229,7 +229,19 @@ body {
     transition: 0.3s;
 }
 
-.screengrab-img:hover {
+.screengrab-img-2 {
+    max-width: 60%;
+    max-height: 300px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.screengrab-img:hover,
+.screengrab-img-2:hover {
     opacity: 0.7;
 }
 
@@ -613,6 +625,10 @@ img.demo {
 
     .div-border {
         border: 0;
+    }
+
+    .screengrab-img-2 {
+        margin-top: 50px;
     }
 }
 
