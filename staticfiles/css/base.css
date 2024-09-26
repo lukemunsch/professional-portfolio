@@ -187,12 +187,12 @@ body {
 
 .project-link {
     text-decoration: none;
-    color: black;
+    color: black !important;
 }
 
 .project-link:hover {
     text-decoration: underline;
-    color: rgb(5, 85, 0);
+    color: rgb(5, 85, 0) !important;
 }
 
 .project-item {
