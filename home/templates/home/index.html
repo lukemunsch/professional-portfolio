@@ -14,34 +14,71 @@
       <div class="row profile-section">
         <div class="col-12 col-md-4 text-center">
           <!-- insert profile image here -->
-          <img class="profile-img mb-5" src="static/img/lm-profile-image.png" alt="Luke Munsch's profile image">
+          <img
+            class="profile-img mb-5"
+            src="static/img/lm-profile-image.png"
+            alt="Luke Munsch's profile image"
+          />
         </div>
         <div class="col-12 col-md-8">
           <p class="tech-text">
             I am a Technically-minded individual with knowledge of
             <span class="tech">HTML</span>, <span class="tech">CSS</span>,
             <span class="tech">Javascript</span>, <span class="tech">SQL</span>,
-            and <span class="tech">Python</span> web development languages. I have
-            created and encorporated my knowledge into a series of projects both
-            during education as well as since completing my learning course.
+            and <span class="tech">Python</span> web development languages. I
+            have created and encorporated my knowledge into a series of projects
+            both during education as well as since completing my learning
+            course.
           </p>
-          <br>
+          <br />
           <p>
             Motivated, well-disciplined and adaptable, dedicated and focused
             whether on solo projects or integrated into a larger team. I always
             have an eagerness to learn to use and expand my knowledge.
           </p>
-          <br>
+          <br />
         </div>
       </div>
     </div>
   </div>
-  <div class="row mb-3 text-center profile-section">
+  <hr />
+  <div class="row mb-3 profile-section">
     <div class="col-12">
-      <p class="tech-text text-justify"><strong>Feel free to browse through my site and check out the projects I have been working on in my own
-          time.</strong></p>
-      <p class="tech-text text-justify"><strong>As I complete new projects I will be uploading them to my site, so keep checking back to see new
-          content regularly!</strong></p>
+      <p class="tech-text text-justify">
+        <strong>Here are some projects that I have built;</strong>
+      </p>
+      <div class="row">
+        <div class="col-12 col-sm-10 offset-sm-1">
+          {% for p in projects %}
+          <div class="row mb-4">
+            <div class="col">
+              <a href="{% url 'project_details' p.id %}" class="project-link"
+                >{{ p.friendly_proj_name }}</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <!-- project image -->
+              <a href="{% url 'project_details' p.id %}" class="project-link"
+                ><img
+                  class="profile-img"
+                  src="{{ p.screengrab.url }}"
+                  alt="{{ p.friendly_proj_name }} Screengrab image"
+              /></a>
+            </div>
+            <div class="col-9">
+              <!-- project description -->
+              <a href="{% url 'project_details' p.id %}" class="project-link"
+                ><p>languages used: {{ p.languages }}</p>
+                <p>{{ p.proj_desc | truncatewords:30 }}</p></a
+              >
+            </div>
+          </div>
+          <hr />
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </div>
 </div>

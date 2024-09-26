@@ -15,6 +15,7 @@ class ProjectAdmin(admin.ModelAdmin):
     )
     ordering = ('project_name',)
     search_fields = ['project_name', 'languages',]
+    list_filter = ('home_display',)
 
 
 admin.site.register(Project, ProjectAdmin)

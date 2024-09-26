@@ -43,6 +43,7 @@ class Project(models.Model):
         null=False,
         blank=False
     )
+    home_display = models.BooleanField(default=False, null=True, blank=True)
 
     class Meta:
         """Set up how the projects are ordered"""

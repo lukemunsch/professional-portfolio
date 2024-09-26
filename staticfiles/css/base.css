@@ -190,6 +190,11 @@ body {
     color: black;
 }
 
+.project-link:hover {
+    color: rgb(10, 80, 5);
+}
+
+
 .project-item {
     font-family: 'Andika', Arial, Helvetica, sans-serif;
     font-weight: 700;
