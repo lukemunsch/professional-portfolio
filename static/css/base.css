@@ -187,7 +187,12 @@ body {
 
 .project-link {
     text-decoration: none;
-    color: black;
+    color: black !important;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+    color: rgb(5, 85, 0) !important;
 }
 
 .project-item {
@@ -229,19 +234,7 @@ body {
     transition: 0.3s;
 }
 
-.screengrab-img-2 {
-    max-width: 60%;
-    max-height: 300px;
-    text-align: center;
-    align-items: center;
-    border-radius: 5px;
-    border: 1px solid black;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.screengrab-img:hover,
-.screengrab-img-2:hover {
+.screengrab-img:hover {
     opacity: 0.7;
 }
 
@@ -263,7 +256,7 @@ body {
 /* button for returning to previous page */
 .return-button {
     text-decoration: none;
-    background-color: rgba(14, 155, 1, 0.6);
+    background-color: rgba(14, 155, 1, 0.3);
     border: 1px solid rgba(0, 0, 0, 0.8);
     height: 42px;
     width: auto;
@@ -625,10 +618,6 @@ img.demo {
 
     .div-border {
         border: 0;
-    }
-
-    .screengrab-img-2 {
-        margin-top: 50px;
     }
 }
 
