@@ -191,7 +191,6 @@ body {
 }
 
 .project-link:hover {
-    text-decoration: underline;
     color: rgb(5, 85, 0) !important;
 }
 
