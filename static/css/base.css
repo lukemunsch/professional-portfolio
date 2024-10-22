@@ -99,7 +99,7 @@ body {
 }
 
 .menu-name {
-    font-size: 90%;
+    font-size: 80%;
 }
 
 .menuitem {
@@ -225,6 +225,16 @@ body {
 
 .screengrab-img {
     max-width: 60%;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.screengrab-img-2 {
+    max-height: 400px;
     text-align: center;
     align-items: center;
     border-radius: 5px;
