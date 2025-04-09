@@ -55,4 +55,4 @@ class Project(models.Model):
 
     def get_friendly_district_name(self):
         """set up the friendly versions of our project names"""
-        return self.friendly_district_name
+        return self.friendly_proj_name
